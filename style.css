@@ -1,0 +1,356 @@
+@charset "UTF-8";
+
+/* FONTES ----- FONTES*/
+@import url("https://fonts.googleapis.com/css2?family=Emblema+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* FONTES ----- FONTES*/
+
+* {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+body {
+  background-color: aliceblue;
+}
+
+/* HEADER ----- HEADER*/
+header {
+  display: flex;
+  margin-left: 50%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1%;
+  padding: 1vw;
+  transform: translate(-50%);
+  background-color: rgb(255, 255, 255);
+  height: 2.8vw;
+  width: 80vw;
+  position: fixed;
+  z-index: 1;
+
+  border-radius: 27px;
+  box-shadow: 0px 0px 8px rgba(13, 13, 53, 0.439);
+  transition: 0.3s;
+}
+header:hover {
+  box-shadow: 0px 0px 12px rgba(13, 13, 53, 0.64);
+  transition: 0.4s;
+}
+header > h2 {
+  font-size: 2vw;
+  color: rgb(27, 27, 145);
+  font-family: "Emblema One", system-ui;
+  cursor: default;
+  margin-left: 2vw;
+}
+header  span {
+  font-size: 1.4vw;
+  padding: 6px;
+  color: rgb(13, 13, 82);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  position: relative;
+}
+header  span:hover {
+  cursor: pointer;
+}
+header  .menu::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(27, 27, 145);
+  transition: width 0.4s ease;
+}
+header  .menu:hover::after {
+  width: 100%;
+}
+header a{
+    text-decoration: none;
+}
+
+#orcamento {
+  background-color: rgb(27, 27, 145);
+  color: white;
+  height: 1.6vw;
+  margin-right: 2vw;
+  border-radius: 5px;
+  font-size: 1.4vw;
+  padding: 0.6vw;
+}
+
+/* FIM DO HEADER ----- FIM DO HEADER*/
+
+/* SECTION 1 ----- SECTION 1*/
+
+.container {
+  display: flex;
+  gap: 3vw;
+}
+.container > img {
+  max-width: 45vw;
+  min-width: none;
+  max-height: 70vh;
+  min-height: 10vh;
+  background-size: cover;
+  margin-left: 3%;
+  margin-top: 9%;
+  border-radius: 13px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.579);
+}
+.container > h1 {
+  color: rgb(13, 13, 82);
+  font-size: 3vw;
+  margin-top: 9.5%;
+  font-family: "Poppins", sans-serif;
+  cursor: default;
+}
+.decoration-text{
+  color:rgb(49, 49, 160);
+}
+
+/* SECTION 1 ----- SECTION 1*/
+
+/* MAIN ----- MAIN*/
+
+main {
+  background-color: rgba(129, 188, 207, 0.283);
+  width: 100vw;
+  height: 50vw;
+  margin-top: 9%;
+}
+main > h1 {
+  color: rgb(13, 13, 82);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 3%;
+  font-size: 2.6vw;
+  margin-bottom: 5vw;
+  cursor: default;
+}
+.pilares {
+  display: flex;
+  background-color: azure;
+  margin-top: 2%;
+  align-items: center;
+  width: 50vw;
+  height:7.4vw;
+  border-radius: 40px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.324);
+  transition: 0.3s;
+}
+.pilares:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.pilares > img {
+  width: 10%;
+  height: 70%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.476);
+  margin-left: 1vw;
+}
+.pilares > h3 {
+  color: rgb(13, 13, 82);
+  font-family: "Poppins", sans-serif;
+  cursor: default;
+  font-size: 1.5vw;
+  margin-left: 1vw;
+}
+.pilares > p {
+  color: rgb(13, 13, 82);
+  font-family: "Poppins", sans-serif;
+  width:30vw;
+  cursor: default;
+  font-size: 1.15vw;
+  margin-left: 1vw;
+}
+.centro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paralax {
+  height: 35vw;
+  width: 100vw;
+  background-image: url(img/clinica-1.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+.quem-somos {
+  background-color: aliceblue;
+  height: 40vw;
+}
+.quem-somos > h1 {
+  font-size: 2.8vw;
+  color: rgb(13, 13, 82);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 4%;
+  cursor: default;
+}
+.text-colums {
+  display: flex;
+  gap: 7vw;
+  text-align: justify;
+}
+.text-colums img{
+    max-width: 45vw;
+    min-width: none;
+    max-height: 26vw;
+    min-height: 10vh;
+    background-size: cover;
+    margin-top: 9vw;
+    border-radius: 13px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.579);
+    margin-right: 4vw;
+}
+.card-text{
+    width: 35.6vw;
+    background-color: rgba(129, 188, 207, 0.433);
+    padding: 5vw;
+    color: rgb(9, 9, 70);
+    border-radius: 10px;
+    margin-top: 9vw;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid  rgba(9, 9, 70, 0.477);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.391);
+    font-size: 1.1vw;
+    margin-left: 4vw;
+}
+.card-text2{
+    width: 35.6vw;
+    background-color: rgba(129, 188, 207, 0.433);
+    padding: 5vw;
+    color: rgb(9, 9, 70);
+    border-radius: 10px;
+    margin-top: 12vw;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid  rgba(9, 9, 70, 0.477);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.391);
+    font-size: 1.1vw;
+    margin-right: 4vw;
+}
+.text-colums2{
+    display: flex;
+    gap: 7vw;
+    justify-content: space-evenly;
+    flex-direction:row-reverse;
+    text-align: justify;
+    justify-content: space-between;
+}
+.text-colums2 img{
+    max-width: 45vw;
+    min-width: none;
+    max-height: 26vw;
+    min-height: 10vh;
+    background-size: cover;
+    margin-top: 12vw;
+    border-radius: 13px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.579);
+    margin-left: 4vw;
+}
+
+
+
+
+/* PAGINA 2   /   LOCALIZAÇÃO*/
+
+#text-recep{
+  font-size: 2.6vw;
+  margin-right: 2%;
+}
+.paralax2{
+  height: 35vw;
+  width: 100vw;
+  background-image: url(img/local.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+/* PAGINA 3    /    DENTISTAS*/
+
+#text-grup{
+  font-size: 2.3vw;
+  margin-right: 1.8%;
+  margin-top: 11%;
+}
+.card{
+  display: flex;
+  gap: 3vw;
+  background-color: rgba(129, 188, 207, 0.521);
+  padding: 2vw;
+  width: 80vw;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+  color: rgb(9, 9, 74);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.539);
+  margin-bottom: 5vw;
+  transition: 0.4s;
+}
+.card > h2{
+  font-size: 2.5vw;
+  text-align: center;
+  cursor: default;
+}
+.card > img{
+  width: 34vw;
+  border-radius: 15px;
+}
+.card > p{
+  font-size: 1.5vw;
+  text-align: justify;
+ cursor: default;
+}
+.centro2{
+  display: flex;
+  justify-content: center;
+}
+.card-reverse{
+  display: flex;
+  gap: 3vw;
+  flex-direction: row-reverse;
+  background-color:rgba(129, 188, 207, 0.521);
+  padding: 2vw;
+  width: 80vw;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+  color: rgb(9, 9, 74);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.539);
+  margin-bottom: 5vw;
+  transition: 0.4s;
+}
+.card-reverse > h2{
+  font-size: 2.5vw;
+  text-align: center;
+  cursor: default;
+}
+.card-reverse > img{
+  width: 34vw;
+  border-radius: 15px;
+}
+.card-reverse > p{
+  font-size: 1.5vw;
+  text-align: justify;
+  cursor: default;
+}
+.main3{
+  height: 100%;
+}
+.card:hover{
+  transform: scale(1.05);
+  transition: 0.7s;
+}
+.card-reverse:hover{
+  transform: scale(1.05);
+  transition: 0.7s;
+}
